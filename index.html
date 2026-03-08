@@ -87,17 +87,28 @@
 
     .card{
       background:white;
-      padding:28px 22px;
       width:270px;
       border-radius:14px;
       box-shadow:0 6px 18px rgba(0,0,0,0.10);
       text-align:left;
+      overflow:hidden;
       transition:transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .card:hover{
       transform:translateY(-4px);
       box-shadow:0 10px 22px rgba(0,0,0,0.14);
+    }
+
+    .card-cover{
+      width:100%;
+      height:170px;
+      object-fit:cover;
+      display:block;
+    }
+
+    .card-content{
+      padding:28px 22px;
     }
 
     .card h3{
@@ -165,6 +176,10 @@
         width:100%;
         max-width:320px;
       }
+
+      .card-cover{
+        height:180px;
+      }
     }
   </style>
 </head>
@@ -192,30 +207,37 @@
     <div class="projects">
 
       <div class="card">
-        <h3>Davila Wellness Analytics</h3>
-        <p>
-          Power BI dashboard and analytics project focused on workplace wellness participation
-          at Clínica Dávila, including KPIs, trends, and participation distribution analysis.
-        </p>
-        <a href="https://github.com/Cami2025/Davila-Wellness-Analytics" target="_blank">View Project</a>
+        <div class="card-content">
+          <h3>Davila Wellness Analytics</h3>
+          <p>
+            Power BI dashboard and analytics project focused on workplace wellness participation
+            at Clínica Dávila, including KPIs, trends, and participation distribution analysis.
+          </p>
+          <a href="https://github.com/Cami2025/Davila-Wellness-Analytics" target="_blank">View Project</a>
+        </div>
       </div>
 
       <div class="card">
-        <h3>Burnout Analytics</h3>
-        <p>
-          Power BI dashboard designed to analyze workload and burnout-related indicators,
-          helping identify patterns and support data-informed decisions.
-        </p>
-        <a href="https://github.com/Cami2025/Burnout-Analytics-Dashboard" target="_blank">View Project</a>
+        <div class="card-content">
+          <h3>Burnout Analytics</h3>
+          <p>
+            Power BI dashboard designed to analyze workload and burnout-related indicators,
+            helping identify patterns and support data-informed decisions.
+          </p>
+          <a href="https://github.com/Cami2025/Burnout-Analytics-Dashboard" target="_blank">View Project</a>
+        </div>
       </div>
 
       <div class="card">
-        <h3>Automation Pipeline</h3>
-        <p>
-          Python-based automation pipeline for attendance tracking and operational workflows,
-          integrating Google Sheets and process automation tools.
-        </p>
-        <a href="https://github.com/Cami2025/Davila-Wellness-Automation" target="_blank">View Project</a>
+        <img src="images/fondo_automatizacion.png" alt="Automation Pipeline" class="card-cover">
+        <div class="card-content">
+          <h3>Automation Pipeline</h3>
+          <p>
+            Python-based automation pipeline for attendance tracking and operational workflows,
+            integrating Google Sheets and process automation tools.
+          </p>
+          <a href="https://github.com/Cami2025/Davila-Wellness-Automation" target="_blank">View Project</a>
+        </div>
       </div>
 
     </div>
