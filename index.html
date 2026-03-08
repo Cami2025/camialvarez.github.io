@@ -1,81 +1,229 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Camila Alvarez | Data Analyst</title>
-<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camila Alvarez | Data Analyst</title>
 
-body{
-font-family: Arial;
-margin:0;
-background:#f4f6f8;
-}
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      margin:0;
+      background:#f4f6f8;
+      color:#222;
+    }
 
-.banner{
-background:#0f2a44;
-color:white;
-padding:80px;
-text-align:center;
-}
+    .banner{
+      background-image:
+        linear-gradient(rgba(15,42,68,0.62), rgba(15,42,68,0.62)),
+        url('images/banner.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color:white;
+      padding:110px 20px;
+      text-align:center;
+    }
 
-.banner h1{
-font-size:48px;
-}
+    .banner h1{
+      font-size:52px;
+      margin:0 0 12px 0;
+    }
 
-.section{
-padding:60px;
-text-align:center;
-}
+    .banner p{
+      font-size:22px;
+      margin:0;
+    }
 
-.projects{
-display:flex;
-gap:30px;
-justify-content:center;
-}
+    .about{
+      text-align:center;
+      padding:50px 20px 20px 20px;
+      max-width:900px;
+      margin:0 auto;
+    }
 
-.card{
-background:white;
-padding:20px;
-width:250px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
+    .profile-pic{
+      width:170px;
+      height:170px;
+      border-radius:50%;
+      object-fit:cover;
+      box-shadow:0 6px 18px rgba(0,0,0,0.18);
+      margin-bottom:20px;
+    }
 
-</style>
+    .about h2{
+      font-size:34px;
+      margin:0 0 16px 0;
+      color:#1f2d3d;
+    }
+
+    .about p{
+      font-size:20px;
+      line-height:1.7;
+      max-width:800px;
+      margin:0 auto;
+      color:#3c4a57;
+    }
+
+    .section{
+      padding:55px 20px 70px 20px;
+      text-align:center;
+    }
+
+    .section h2{
+      font-size:38px;
+      margin-bottom:35px;
+      color:#1f2d3d;
+    }
+
+    .projects{
+      display:flex;
+      gap:30px;
+      justify-content:center;
+      flex-wrap:wrap;
+      max-width:1200px;
+      margin:0 auto;
+    }
+
+    .card{
+      background:white;
+      padding:28px 22px;
+      width:270px;
+      border-radius:14px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.10);
+      text-align:left;
+      transition:transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 10px 22px rgba(0,0,0,0.14);
+    }
+
+    .card h3{
+      margin-top:0;
+      margin-bottom:14px;
+      font-size:24px;
+      color:#16324f;
+    }
+
+    .card p{
+      margin:0 0 18px 0;
+      color:#4a5560;
+      line-height:1.6;
+      font-size:17px;
+    }
+
+    .card a{
+      display:inline-block;
+      text-decoration:none;
+      color:white;
+      background:#16324f;
+      padding:10px 16px;
+      border-radius:8px;
+      font-size:15px;
+      font-weight:bold;
+    }
+
+    .card a:hover{
+      background:#0f2a44;
+    }
+
+    .footer{
+      text-align:center;
+      padding:30px 20px 40px 20px;
+      color:#5b6570;
+      font-size:15px;
+    }
+
+    @media (max-width: 768px){
+      .banner{
+        padding:80px 20px;
+      }
+
+      .banner h1{
+        font-size:38px;
+      }
+
+      .banner p{
+        font-size:18px;
+      }
+
+      .about h2{
+        font-size:28px;
+      }
+
+      .about p{
+        font-size:18px;
+      }
+
+      .section h2{
+        font-size:30px;
+      }
+
+      .card{
+        width:100%;
+        max-width:320px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="banner">
+  <div class="banner">
+    <h1>Camila Alvarez</h1>
+    <p>Data Analyst | Continuous Learner</p>
+  </div>
 
-<h1>Camila Alvarez</h1>
-<p>Data Analyst | Continuous Learner</p>
+  <div class="about">
+    <img src="images/profile.jpg" alt="Camila Alvarez" class="profile-pic">
+    <h2>About Me</h2>
+    <p>
+      I am a Data Analyst focused on health, workplace wellness, and business insights.
+      I enjoy transforming operational data into clear dashboards and actionable analysis,
+      while continuously learning tools such as Power BI, Python, SQL, and analytics automation.
+    </p>
+  </div>
 
-</div>
+  <div class="section">
+    <h2>Projects</h2>
 
-<div class="section">
+    <div class="projects">
 
-<h2>Projects</h2>
+      <div class="card">
+        <h3>Davila Wellness Analytics</h3>
+        <p>
+          Power BI dashboard and analytics project focused on workplace wellness participation
+          at Clínica Dávila, including KPIs, trends, and participation distribution analysis.
+        </p>
+        <a href="https://github.com/Cami2025/Davila-Wellness-Analytics" target="_blank">View Project</a>
+      </div>
 
-<div class="projects">
+      <div class="card">
+        <h3>Burnout Analytics</h3>
+        <p>
+          Power BI dashboard designed to analyze workload and burnout-related indicators,
+          helping identify patterns and support data-informed decisions.
+        </p>
+        <a href="https://github.com/Cami2025/Burnout-Analytics-Dashboard" target="_blank">View Project</a>
+      </div>
 
-<div class="card">
-<h3>Davila Wellness Analytics</h3>
-<p>Power BI analysis of workplace wellness participation.</p>
-</div>
+      <div class="card">
+        <h3>Automation Pipeline</h3>
+        <p>
+          Python-based automation pipeline for attendance tracking and operational workflows,
+          integrating Google Sheets and process automation tools.
+        </p>
+        <a href="https://github.com/Cami2025/Davila-Wellness-Automation" target="_blank">View Project</a>
+      </div>
 
-<div class="card">
-<h3>Burnout Analytics</h3>
-<p>Power BI dashboard for workload analysis.</p>
-</div>
+    </div>
+  </div>
 
-<div class="card">
-<h3>Automation Pipeline</h3>
-<p>Python pipeline for attendance tracking.</p>
-</div>
-
-</div>
-
-</div>
+  <div class="footer">
+    © 2026 Camila Alvarez | Data Analyst Portfolio
+  </div>
 
 </body>
 </html>
