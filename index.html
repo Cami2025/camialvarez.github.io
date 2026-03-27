@@ -13,6 +13,10 @@
       color:#222;
     }
 
+    html{
+      scroll-behavior:smooth;
+    }
+
     .banner{
       background-image:
         linear-gradient(rgba(15,42,68,0.62), rgba(15,42,68,0.62)),
@@ -32,7 +36,46 @@
 
     .banner p{
       font-size:22px;
-      margin:0;
+      margin:0 0 28px 0;
+    }
+
+    .banner-actions{
+      display:flex;
+      justify-content:center;
+      gap:16px;
+      flex-wrap:wrap;
+      margin-top:10px;
+    }
+
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      padding:13px 22px;
+      border-radius:10px;
+      font-size:15px;
+      font-weight:bold;
+      transition:all 0.2s ease;
+    }
+
+    .btn-primary{
+      background:#ffffff;
+      color:#16324f;
+    }
+
+    .btn-primary:hover{
+      background:#e9eef3;
+      transform:translateY(-2px);
+    }
+
+    .btn-secondary{
+      background:transparent;
+      color:#ffffff;
+      border:2px solid rgba(255,255,255,0.85);
+    }
+
+    .btn-secondary:hover{
+      background:rgba(255,255,255,0.12);
+      transform:translateY(-2px);
     }
 
     .about{
@@ -87,7 +130,7 @@
 
     .card{
       background:white;
-      width:270px;
+      width:290px;
       border-radius:14px;
       box-shadow:0 6px 18px rgba(0,0,0,0.10);
       text-align:left;
@@ -123,6 +166,18 @@
       color:#4a5560;
       line-height:1.6;
       font-size:17px;
+    }
+
+    .project-tools{
+      margin:0 0 18px 0;
+      font-size:15px;
+      color:#16324f;
+      font-weight:bold;
+    }
+
+    .project-tools span{
+      color:#4a5560;
+      font-weight:normal;
     }
 
     .card a{
@@ -190,10 +245,12 @@
       padding:12px 20px;
       border-radius:10px;
       font-weight:bold;
+      transition:all 0.2s ease;
     }
 
     .contact-links a:hover{
       background:#0f2a44;
+      transform:translateY(-2px);
     }
 
     .footer{
@@ -241,6 +298,16 @@
         font-size:15px;
         padding:10px 16px;
       }
+
+      .banner-actions{
+        flex-direction:column;
+        align-items:center;
+      }
+
+      .btn{
+        width:220px;
+        text-align:center;
+      }
     }
   </style>
 </head>
@@ -250,6 +317,15 @@
   <div class="banner">
     <h1>Camila Alvarez</h1>
     <p>Data Analyst | Power BI, SQL & Python</p>
+
+    <div class="banner-actions">
+      <a href="files/Camila-Alvarez-CV.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer" download>
+        Download CV
+      </a>
+      <a href="#projects" class="btn btn-secondary">
+        View Projects
+      </a>
+    </div>
   </div>
 
   <div class="about">
@@ -261,7 +337,7 @@
     </p>
   </div>
 
-  <div class="section">
+  <div class="section" id="projects">
     <h2>Projects</h2>
 
     <div class="projects">
@@ -274,7 +350,8 @@
             Power BI analytics dashboard built to monitor workplace wellness participation at Clínica Dávila.
             Includes KPI tracking, participation trends, and distribution analysis to support operational decision-making.
           </p>
-          <a href="https://github.com/Cami2025/Davila-Wellness-Analytics" target="_blank" rel="noopener noreferrer">View Project</a>
+          <p class="project-tools">Tools: <span>Power BI, Python, Google Sheets</span></p>
+          <a href="https://github.com/Cami2025/Davila-Wellness-Analytics" target="_blank" rel="noopener noreferrer">View on GitHub</a>
         </div>
       </div>
 
@@ -286,7 +363,8 @@
             Power BI dashboard focused on workload, wellbeing, and burnout risk indicators.
             Designed to identify patterns, compare risk levels, and support data-driven decisions in workplace health.
           </p>
-          <a href="https://github.com/Cami2025/Burnout-Analytics-Dashboard" target="_blank" rel="noopener noreferrer">View Project</a>
+          <p class="project-tools">Tools: <span>Power BI, Python, SQL</span></p>
+          <a href="https://github.com/Cami2025/Burnout-Analytics-Dashboard" target="_blank" rel="noopener noreferrer">View on GitHub</a>
         </div>
       </div>
 
@@ -298,7 +376,8 @@
             Python-based automation workflow for attendance tracking and operational reporting,
             integrating Google Sheets and process automation tools to improve data organization and efficiency.
           </p>
-          <a href="https://github.com/Cami2025/Davila-Wellness-Automation" target="_blank" rel="noopener noreferrer">View Project</a>
+          <p class="project-tools">Tools: <span>Python, Google Sheets, Automation</span></p>
+          <a href="https://github.com/Cami2025/Davila-Wellness-Automation" target="_blank" rel="noopener noreferrer">View on GitHub</a>
         </div>
       </div>
 
@@ -321,7 +400,7 @@
     </div>
   </div>
 
-  <div class="section contact">
+  <div class="section contact" id="contact">
     <h2>Contact</h2>
     <p>
       I am open to Data Analyst opportunities in business intelligence, reporting, and people analytics.
@@ -329,7 +408,7 @@
     </p>
 
     <div class="contact-links">
-      <a href="mailto:camianalytics5@gmail.com?subject=Data%20Analyst%20Opportunity">Email</a>
+      <a href="mailto:camianalytics5@gmail.com?subject=Data%20Analyst%20Opportunity">Email Me</a>
       <a href="https://github.com/Cami2025" target="_blank" rel="noopener noreferrer">GitHub</a>
       <a href="https://www.linkedin.com/in/camilaalvareztafs" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
