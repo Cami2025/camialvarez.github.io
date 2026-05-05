@@ -67,17 +67,6 @@
       transform:translateY(-2px);
     }
 
-    .btn-secondary{
-      background:transparent;
-      color:#ffffff;
-      border:2px solid rgba(255,255,255,0.85);
-    }
-
-    .btn-secondary:hover{
-      background:rgba(255,255,255,0.12);
-      transform:translateY(-2px);
-    }
-
     .about{
       text-align:center;
       padding:50px 20px 20px 20px;
@@ -121,16 +110,18 @@
 
     .projects{
       display:flex;
-      gap:30px;
+      gap:24px;
       justify-content:center;
       flex-wrap:wrap;
-      max-width:1200px;
+      max-width:1120px;
       margin:0 auto;
+      padding-left:10px;
+      padding-right:10px;
     }
 
     .card{
       background:white;
-      width:290px;
+      width:255px;
       border-radius:14px;
       box-shadow:0 6px 18px rgba(0,0,0,0.10);
       text-align:left;
@@ -151,21 +142,21 @@
     }
 
     .card-content{
-      padding:28px 22px;
+      padding:24px 20px;
     }
 
     .card h3{
       margin-top:0;
       margin-bottom:14px;
-      font-size:24px;
+      font-size:22px;
       color:#16324f;
     }
 
     .card p{
       margin:0 0 18px 0;
       color:#4a5560;
-      line-height:1.6;
-      font-size:17px;
+      line-height:1.55;
+      font-size:15.5px;
     }
 
     .project-tools{
@@ -285,6 +276,12 @@
         font-size:30px;
       }
 
+      .projects{
+        justify-content:center;
+        padding-left:0;
+        padding-right:0;
+      }
+
       .card{
         width:100%;
         max-width:320px;
@@ -378,6 +375,19 @@
         </div>
       </div>
 
+      <div class="card">
+        <img src="images/aps.png" alt="APS Analytics Dashboard" class="card-cover">
+        <div class="card-content">
+          <h3>APS Analytics Dashboard</h3>
+          <p>
+            Power BI dashboard designed to monitor adherence and dropout risk in Primary Health Care programs.
+            Uses a fictional dataset to identify attendance patterns, alert levels, and users at risk of early dropout.
+          </p>
+          <p class="project-tools">Tools: <span>Power BI, Excel, Power Query, DAX</span></p>
+          <a href="https://github.com/Cami2025/APS-Analytics-Dashboard" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -394,6 +404,10 @@
       <div class="skill-pill">Data Visualization</div>
       <div class="skill-pill">Dashboard Design</div>
       <div class="skill-pill">Analytics Automation</div>
+      <div class="skill-pill">DAX</div>
+      <div class="skill-pill">Excel</div>
+      <div class="skill-pill">People Analytics</div>
+      <div class="skill-pill">Healthcare Analytics</div>
     </div>
   </div>
 
